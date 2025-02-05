@@ -292,3 +292,61 @@ a:active { text-decoration: none; }
 }
 
 /*#endregion*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'open sans', Helvetica, Arial, sans-serif;
+
+    overflow-y:initial;
+}
+
+/* https://coolors.co/ffffff-f2d5f8-e5afe8-c475ca-77f8ff */
+
+.hidden{
+    opacity: 0;
+    transform: translateX(-10%);
+    filter: blur(5px);
+    transition: opacity 0.3s, transform 0.3s, filter 0.5s;
+}
+.show{
+    opacity: 1;
+    transform: translateX(0px);
+    filter: blur(0px);
+}
+/* #endregion */
+
+body{
+    overflow-x: hidden;
+    overflow-x: clip !important;    
+    background-color: #e5afe8;
+}
+
+.overlay{
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    background-color: #000000;
+    color: #333333;
+    top: 0;
+    left: -100vw;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s ease;
+    display: flex;
+
+    padding-top: 200px;
+
+    cursor: pointer;
+
+    display: none;
+}
+
+.overlay-is-active{
+    opacity: 0.3;
+    visibility: visible;
+
+    display: block;
+}

@@ -1,0 +1,68 @@
+.first{
+    height: calc(100vh - 100px);
+    margin-top: 100px;
+    width: 100%;
+}
+
+.firstCont{
+    display: flex;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    padding-bottom: 10vh;
+
+    align-items: center;
+}
+
+.aarni, .ensti{
+    width: 50%;
+    height: fit-content;
+}
+
+.aarni h1, .ensti h1{
+    font-family: "Karla", serif;
+    font-size: 40px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.card{
+    width: 90%;
+    height: fit-content;
+
+    margin: auto;
+
+    border: #cccccc 2px solid;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: #aeaeae 0 0 15px; 
+    background-image: linear-gradient(to right bottom, #fff 0%, #ffffff 100%);
+}
+
+.row2, .row3, .row4{
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    text-align: left;
+}
+
+i{
+    margin: 20px 0;
+    font-size: 25px;
+    color: #323b2d;
+    width: 20px;
+}
+
+p{
+    font-size: clamp(0.5rem, 2vw, 1.25rem);
+
+    font-family: "Karla", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    margin-left: 20px;
+
+    color: #80986c;
+
+    /* text-shadow: 0px 0px 1px #e3e3e3; */
+}
