@@ -1,18 +1,23 @@
 .first{
     margin-top: 70px;
     height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .firstCont{
     display: flex;
-    height: 100%;
+    height: 80%;
+    width: 90%;
+    justify-content: space-between;
 }
 
 .left{
     width: 45%;
     display: flex;
     flex-direction: column;
-    margin: auto;
+    justify-content: space-between;
 }
 
 .left h1{
@@ -21,6 +26,7 @@
     font-size: 50px;
 
     margin: 20px 0;
+    margin-top: 0px;
 }
 
 .left p{
@@ -28,29 +34,68 @@
 
     font-size: 20px;
     margin-bottom: 20px;
+    width: fit-content;
+}
+
+.text{
+    margin-bottom: 5vh;
 }
 
 .img{
     
+    margin-bottom: auto;
+
     width: 100%;
-    height: 50vh;
+    height: 100%;
     background-size: cover;
     background-position: center;
-
-    margin: auto;
 
     background-image: url("../images/KynttiläTeline-1-min.jpg");
 }
 
 .right{
-    width: 50%;
+    width: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 iframe{
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
+}
+
+@media(max-width: 800px){
+
+    .first{
+        height: 100%;
+    }
+
+    .firstCont{
+        flex-wrap: wrap;
+    }
+
+    iframe{
+        height: 100%;
+    }
+
+    .right, .left{
+        width: 100%;
+        height: 80vh;
+    }
+
+    .left{
+        margin: 5vh 0;
+    }
+
+    .right{
+        margin-bottom: 5vh;
+    }
+}
+
+@media(max-width:400px){
+    .left h1{
+        font-size: 40px;
+    }
 }
