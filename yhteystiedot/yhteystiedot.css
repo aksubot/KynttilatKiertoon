@@ -1,10 +1,8 @@
-body{
-    margin-top:100px;
-}
+
 
 .first{
     height: calc(100vh - 100px);
-    
+    margin-top: 100%;
     width: 100%;
 }
 
@@ -69,18 +67,4 @@ p{
     color: #80986c;
 
     /* text-shadow: 0px 0px 1px #e3e3e3; */
-}
-
-@media screen{
-    .first{
-        height:100%;
-    }
-
-    .firstCont{
-        flex-wrap:wrap;
-    }
-
-    .aarni, .ensti{
-        width:100%;
-    }
 }
