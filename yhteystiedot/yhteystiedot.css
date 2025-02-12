@@ -54,7 +54,9 @@ i{
 }
 
 p{
+    /*          clamp (alin size, nopeus(?), ylin size) */
     font-size: clamp(0.5rem, 2vw, 1.25rem);
+    font-size: 1.25rem;
 
     font-family: "Karla", serif;
     font-weight: 400;
@@ -65,4 +67,35 @@ p{
     color: #80986c;
 
     /* text-shadow: 0px 0px 1px #e3e3e3; */
+}
+
+@media (max-width:920px){
+    .firstCont{
+        width: 95%;
+    }
+}
+@media (max-width: 800px){
+
+    .first{
+        height: 100%;
+    }
+
+    .firstCont{
+        width: 90%;
+        flex-wrap: wrap;
+    }
+
+    .aarni, .ensti{
+        width: 100%;
+    }
+}
+
+@media (max-width:450px){
+    p{
+        font-size: 1rem;
+    }
+
+    .firstCont{
+        width: 100%;
+    }
 }
