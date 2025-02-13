@@ -1,0 +1,59 @@
+.first{
+    margin-top: 120px;
+}
+
+.first h1{
+    font-family: "Karla", serif;
+    font-size: 60px;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.icons{
+    width: 20%;
+    margin: auto;
+    height: fit-content;
+    display: flex;
+}
+
+.fa-candle-holder, .fa-arrow-right, .fa-trash{
+    width: 33%;
+    height: 50px;
+    display: block;
+    color: black;
+    font-size: 50px;
+    text-align: center;
+}
+
+.icons img{
+    width: auto;
+    height: auto;
+    max-width: 50px;
+    max-height: 50px;
+    margin: 0 auto;
+}
+
+/* .icons i{
+    position: relative;
+} */
+
+.icons span{
+    position: relative;
+    width: 33%;
+}
+
+.icons span i{
+    width: 100% ;
+}
+
+.fa-xmark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 60px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    transform: translate(3px, -10px);
+    color: red;
+}
