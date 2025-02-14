@@ -1,17 +1,17 @@
 .first{
     margin-top: 120px;
+    display: flex;
 }
 
 .first h1{
     font-family: "Karla", serif;
     font-size: 60px;
-    text-align: center;
+    text-align: left;
     margin: 40px 0;
 }
 
 .icons{
     width: 350px;
-    margin: auto;
     height: fit-content;
     display: flex;
 }
@@ -31,6 +31,8 @@
     max-width: 50px;
     max-height: 50px;
     margin: 0 auto;
+
+    user-select: none;
 }
 
 /* .icons i{
@@ -58,8 +60,33 @@
     color: red;
 }
 
+.first p{
+    font-family: "Karla", serif;
+    text-align: left;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
 @media (max-width: 400px){
     .icons{
         width: 300px;
     }
+}
+
+.left{
+    width: 45%;
+    margin: auto;
+}
+
+.right{
+    width: 45%;
+    margin: auto;
+}
+
+.right img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100vh;
 }
