@@ -1,14 +1,17 @@
+/* #region FIRST */
+
 .first{
     margin-top: 120px;
     display: flex;
+    height: calc(90vh - 200px);
 }
 
-.first h1{
+/* .first h1{
     font-family: "Karla", serif;
     font-size: 60px;
     text-align: left;
-    margin: 40px 0;
-}
+    margin: 20px 0;
+} */
 
 .icons{
     width: 350px;
@@ -60,13 +63,13 @@
     color: red;
 }
 
-.first p{
+/* .first p{
     font-family: "Karla", serif;
     text-align: left;
     width: 100%;
     font-size: 20px;
-    margin-top: 30px;
-}
+    margin-top: 10px;
+} */
 
 @media (max-width: 400px){
     .icons{
@@ -82,11 +85,128 @@
 .right{
     width: 45%;
     margin: auto;
+    position: relative;
 }
 
 .right img{
     width: auto;
     height: auto;
-    max-width: 100%;
-    max-height: 100vh;
+    max-width: 50vw;
+    max-height: 60vh;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.right #candle{
+    max-width: 30vw;
+    max-height: 50vh;
+}
+
+
+/* #endregion */
+
+/* #region SECOND */
+
+.secondCont{
+    display: flex;
+}   
+
+/* .secondCont h1{
+    font-family: "Karla", serif;
+    font-size: 50px;
+    text-align: left;
+    margin: 20px 0;
+} */
+
+/* .secondCont p{
+    font-family: "Karla", serif;
+    text-align: left;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 10px;
+} */
+
+.secondCont p span{
+    font-family: "Karla", serif;
+    font-size: 22px;
+
+    font-weight: 700;
+}
+
+.secondCont .right i{
+    font-size: 28px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/* #endregion */
+
+/* #region THIRD */
+
+.third{
+    margin-top: 5vh;
+    height: 50vh;
+}
+
+.thirdCont{
+    display: flex;
+    height: 100%;
+}
+
+/* #endregion */
+
+h1{
+    font-family: "Karla", serif;
+    font-size: 50px;
+    text-align: left;
+    margin: 20px 0;
+}
+
+p{
+    font-family: "Karla", serif;
+    text-align: left;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+@media (max-width:800px){
+    .first{
+        flex-direction: column;
+        height: 80vh;
+    }
+
+    .first .left, .secondCont .right, .thirdCont .left{
+        width: 80%;
+    }
+
+    .first .right{
+        height: 50vw;
+        width: 100%;
+    }
+
+    .first .right img{
+        max-width: 80%;
+        max-height: 80%;
+    }
+
+    .secondCont{
+        flex-direction: column-reverse;
+    }
+
+    .secondCont .left{
+        margin-top: 40px;
+        width: unset;
+    }
+
+    .thirdCont{
+        flex-direction: column;
+    }
+
+    .third{
+        margin-bottom: 10vh;
+    }
 }
