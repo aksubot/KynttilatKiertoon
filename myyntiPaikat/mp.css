@@ -30,6 +30,7 @@
 
     margin: 20px 0;
     margin-top: 0px;
+    color: var(--primary-grey);
 }
 
 .left p{
@@ -38,6 +39,7 @@
     font-size: 20px;
     margin-bottom: 20px;
     width: fit-content;
+    color: var(--secondary-grey);
 }
 
 .text{
@@ -55,8 +57,8 @@
 
     background-image: url("../images/KynttiläTeline-1-min.jpg");
 
-    border-radius: 20px;
-    border: 3px solid #c475ca;
+    border-radius: var(--primary-border-radius);
+    border: 3px solid var(--primary-green);
     box-shadow: 0px 0px 5px #fff;
 }
 
@@ -70,7 +72,7 @@
 iframe{
     width: 100%;
     height: 100%;
-    border-radius: 20px;
+    border-radius: var(--primary-border-radius);
     box-shadow: 0px 0px 5px #fff;   
 }
 
@@ -131,8 +133,8 @@ iframe{
 
     background-image: url("../images/KynttiläKeräysBoxi.jpg");
 
-    border-radius: 20px;
-    border: 3px solid #c475ca;
+    border-radius: var(--primary-border-radius);
+    border: 3px solid var(--primary-green);
     box-shadow: 0px 0px 5px #fff;
 }
 
@@ -140,8 +142,8 @@ iframe{
     width: auto;
     height: auto;
     max-width: 100%;
-    border-radius: 20px;
-    border: 3px solid #c475ca;
+    border-radius: var(--primary-border-radius);
+    border: 3px solid var(--primary-green);
     box-shadow: 0px 0px 5px #fff;
     vertical-align: middle;
 }
@@ -157,6 +159,8 @@ iframe{
 
     margin: 20px 0;
     margin-top: 0px;
+
+    color: var(--primary-grey);
 }
 
 .secondText p{
@@ -165,6 +169,7 @@ iframe{
     font-size: 20px;
     margin-bottom: 20px;
     width: fit-content;
+    color: var(--secondary-grey);
 }
 
 @media (max-width: 870px){

@@ -2,8 +2,8 @@
 
 /*      NAVBAR     */
 .navbar{
-    /* background: #eeeeee; */
-    background: #c475ca;
+    /* background: #4d7ea8; */
+    background: var(--primary-blue);
     height: fit-content;
     display: flex;
     justify-content: center;
@@ -17,7 +17,7 @@
     position: fixed;
 
     /* overflow-y: visible; */
-    border-bottom: #f2d5f8 2px solid;
+    border-bottom: var(--primary-white) 2px solid;
 }
 .navbar-container{
     display: flex;
@@ -44,7 +44,7 @@
 }
 #navbarLogo{
     /* color: #80986c; */
-    color: #292929;
+    color: var(--primary-grey);
     cursor: pointer;
     text-decoration: none;
     font-size: 25px;
@@ -83,7 +83,7 @@
     height: inherit;
 }
 .navbar__links{
-    color: #292929;
+    color: var(--primary-grey);
     text-decoration: none;
     display: flex;
     padding: 0 1rem;
@@ -106,7 +106,7 @@
 
 
 .navbar__links:hover {
-    color: #77f8ff;
+    color: var(--secondary-blue);
     transition: all 0.2s ease;
 }
 .navbar__toggle{
@@ -153,13 +153,13 @@ a:active { text-decoration: none; }
         transition: all 0.3s ease;
         height: 100%;
         z-index: -1;
-        background: #272727;
+        background: var(--primary-blue);
 
         padding-top: 200px;
     }
 
     .navbar__menu.active{
-        background: #c475ca;
+        background: var(--primary-blue);
         right: 0%;
         top: 0;
         opacity: 1;
@@ -187,7 +187,7 @@ a:active { text-decoration: none; }
         height: 3px;
         margin: 5px auto;
         transition: all 0.3s ease;
-        background: #292929;
+        background: var(--primary-grey);
         position: relative;
         z-index: 999;
     }
@@ -197,7 +197,7 @@ a:active { text-decoration: none; }
         width: 100%;
         z-index: 999;
         height: 60px;
-        border-bottom: #292929 solid 1px;
+        border-bottom: var(--primary-blue) solid 1px;
     }
 
     .navbar__links{
@@ -208,7 +208,7 @@ a:active { text-decoration: none; }
 
         height: 10px;
 
-        color: #292929;
+        color: var(--primary-grey);
 
         padding-top: 20px;
         padding-bottom: 20px;
@@ -225,7 +225,7 @@ a:active { text-decoration: none; }
     }
 
     .navbar__item :hover{
-        background-color: #e5afe8;
+        background-color: var(--primary-white);
     }
 
     #mobile-menu {
@@ -302,7 +302,9 @@ a:active { text-decoration: none; }
     overflow-y:initial;
 }
 
-/* https://coolors.co/ffffff-f2d5f8-e5afe8-c475ca-77f8ff */
+/* https://coolors.co/000000-222222-888888-f1f7ed-fff700 */
+
+/* https://coolors.co/4d7ea8-99ddc8-95bf74-659b5e-556f44 */
 
 .hidden{
     opacity: 0;
@@ -320,7 +322,7 @@ a:active { text-decoration: none; }
 body{
     overflow-x: hidden;
     overflow-x: clip !important;    
-    background-color: #e5afe8;
+    background-color: var(--primary-blue);
 
     width: 100%;
     height: 100%;
@@ -352,4 +354,26 @@ body{
     visibility: visible;
 
     display: block;
+}
+
+
+
+:root{
+    --header-big: 50px;
+    --header-medium: 40px;
+    --header-small: 20px;
+
+    --paragraph-big: 20px;
+    --paragraph-medium: 15px;
+    --paragraph-small: 10px;
+
+    --primary-blue: #99ddc8;
+    --secondary-blue: #4d7ea8;
+    --primary-grey: #222222;
+    --secondary-grey: #666666;
+    --primary-white: #f1f7ed;
+    --primary-green: #95bf74;
+    --secondary-green: #659b5e;
+
+    --primary-border-radius: 5px;
 }

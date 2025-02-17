@@ -3,7 +3,6 @@
 .first{
     margin-top: 120px;
     display: flex;
-    height: calc(90vh - 200px);
 }
 
 /* .first h1{
@@ -13,96 +12,44 @@
     margin: 20px 0;
 } */
 
-.icons{
-    width: 350px;
-    height: fit-content;
+.first .left h1{
+    margin-top: 0;
+}
+
+.first  .left, .first .right{
+    width: 40%;
+    margin: auto;
     display: flex;
+    flex-direction: column;
 }
 
-.fa-candle-holder, .fa-arrow-right, .fa-trash{
-    width: 33%;
-    height: 50px;
-    display: block;
-    color: black;
-    font-size: 50px;
-    text-align: center;
+.first .right{
+    position: relative;
+    
+    min-height: 50vh;
+
+    border: 3px solid var(--primary-green);
+    border-radius: var(--primary-border-radius);
+    padding: 20px;
+    box-shadow: #aeaeae 0 0 5px; 
+    background-image: linear-gradient(to right bottom, var(--primary-white) 0%, var(--primary-white) 100%);
 }
 
-.icons img{
+.first .right img{
     width: auto;
     height: auto;
-    max-width: 50px;
-    max-height: 50px;
-    margin: 0 auto;
-
-    user-select: none;
-}
-
-/* .icons i{
-    position: relative;
-} */
-
-.icons span{
-    position: relative;
-    width: 33%;
-}
-
-.icons span i{
-    width: 100%;
-}
-
-.fa-xmark{
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 65px;
-    width: 60px;
-    height: 60px;
-    text-align: center;
-    transform: translate(2px, -10px);
-    color: red;
-}
-
-/* .first p{
-    font-family: "Karla", serif;
-    text-align: left;
-    width: 100%;
-    font-size: 20px;
-    margin-top: 10px;
-} */
-
-@media (max-width: 400px){
-    .icons{
-        width: 300px;
-    }
-}
-
-.left{
-    width: 45%;
-    margin: auto;
-}
-
-.right{
-    width: 45%;
-    margin: auto;
-    position: relative;
-}
-
-.right img{
-    width: auto;
-    height: auto;
-    max-width: 50vw;
-    max-height: 60vh;
+    max-width: 90%;
+    max-height: 90%;
 
     position: absolute;
-    top: 50%;
     left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
 }
 
 .right #candle{
-    max-width: 30vw;
-    max-height: 50vh;
+    max-width: 50%;
+    max-height: 90%;
 }
 
 
@@ -129,17 +76,34 @@
     margin-top: 10px;
 } */
 
-.secondCont p span{
-    font-family: "Karla", serif;
-    font-size: 22px;
 
-    font-weight: 700;
+
+.secondCont .left p{
+    color: var(--primary-grey);
+    font-size: 60px;
 }
 
 .secondCont .right i{
     font-size: 28px;
+    color: var(--primary-grey);
+}
+
+.icons{
+    margin: auto;
+    width: 60px;
+    display: flex;
+    justify-content: space-between;
     margin-top: 10px;
-    margin-right: 10px;
+}
+
+.secondCont p{
+    text-align: center;
+    color: var(--primary-grey);
+    font-weight: 500;
+}
+
+.secondCont h1{
+    text-align: center;
 }
 
 /* #endregion */
@@ -148,58 +112,74 @@
 
 .third{
     margin-top: 5vh;
-    height: 50vh;
 }
 
 .thirdCont{
     display: flex;
-    height: 100%;
+    
+}
+
+.thirdCont img{
+    width: auto;
+    height: auto;
+
+    max-width: 49%;
+    max-height: 100%;
+}
+
+.thirdCont .right{
+    margin: 40px auto;
+}
+
+.thirdCont .left, .thirdCont .right{
+    width: 40%;
 }
 
 /* #endregion */
 
 h1{
     font-family: "Karla", serif;
-    font-size: 50px;
+    font-size: var(--header-big);
     text-align: left;
     margin: 20px 0;
+    color: var(--primary-grey);
 }
 
 p{
     font-family: "Karla", serif;
     text-align: left;
     width: 100%;
-    font-size: 20px;
+    font-size: var(--paragraph-big);
     margin-top: 10px;
+    color: var(--secondary-grey);
+}
+
+.left, .right{
+    width: 40%;
+    margin: 50px auto;
+    height: 80%;
 }
 
 @media (max-width:800px){
     .first{
         flex-direction: column;
-        height: 80vh;
+        height: 100%;
     }
 
-    .first .left, .secondCont .right, .thirdCont .left{
+    .left, .right, .first .left, .first .right, .thirdCont .left, .thirdCont .right{
         width: 80%;
     }
 
     .first .right{
-        height: 50vw;
-        width: 100%;
-    }
-
-    .first .right img{
-        max-width: 80%;
-        max-height: 80%;
+        margin: 5vh auto;
     }
 
     .secondCont{
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .secondCont .left{
         margin-top: 40px;
-        width: unset;
     }
 
     .thirdCont{
@@ -210,3 +190,10 @@ p{
         margin-bottom: 10vh;
     }
 }
+
+@media (max-width: 420px){
+    .secondCont h1{
+        font-size: var(--header-medium);
+    }
+}
+
