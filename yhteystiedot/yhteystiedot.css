@@ -53,13 +53,12 @@
 i{
     margin: 20px 0;
     font-size: 25px;
-    color: var(--primary-grey) ;
+    color: var(--secondary-grey);
     width: 20px;
 }
 
 p{
     /*          clamp (alin size, nopeus(?), ylin size) */
-    font-size: clamp(0.5rem, 2vw, 1.25rem);
     font-size: 16px;
 
     font-family: "Inter", serif;
@@ -86,11 +85,6 @@ p{
     display: flex;
 }
 
-.up .card p{
-    color: var(--secondary-grey);
-    font-size: 18px;
-    font-family: "Inter", sans-serif;
-}
 
 @media (max-width:940px){
     .firstCont, .up{
