@@ -224,9 +224,3 @@ iframe{
 /* #endregion */
 
 
-@media(max-width:420px){
-    .left h1, .secondText h1{
-        font-size: 38px ;
-    }
-}
-
