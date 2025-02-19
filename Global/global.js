@@ -18,16 +18,13 @@ overlay.addEventListener('click', function() {
 })
 
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if(entry.isIntersecting){
-            entry.target.classList.add("show");
-        }
-        // else{
-        //     entry.target.classList.remove("show");
-        // }
-    });
-});
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        entry.target.classList.toggle("show", entry.isIntersecting)
+    })
+}, {
+    rootMargin: "-20%",
+})
 
 const hiddenElements = document.querySelectorAll(".hidden");
-hiddenElements.forEach((el) => observer.observe(el));
+hiddenElements.forEach(el => {observer.observe(el)});
