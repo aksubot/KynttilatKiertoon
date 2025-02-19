@@ -6,7 +6,7 @@
     height: calc(100vh - 70px);
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 60%;
 
     margin: 20px auto;
     
@@ -130,7 +130,7 @@ iframe{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70%;
+    width: 60%;
     margin: auto;
 }
 
