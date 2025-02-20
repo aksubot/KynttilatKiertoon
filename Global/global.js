@@ -23,7 +23,7 @@ const observer = new IntersectionObserver(entries => {
         entry.target.classList.toggle("show", entry.isIntersecting)
     })
 }, {
-    rootMargin: "-20%",
+    rootMargin: "-15%",
 })
 
 const hiddenElements = document.querySelectorAll(".hidden");

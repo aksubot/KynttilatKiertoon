@@ -21,12 +21,8 @@
 }
 
 .aarni h1, .ensti h1{
-    font-family: "Inter", serif;
-    font-size: 18px;
     text-align: center;
     margin: 40px 0;
-    font-weight: 400;
-    color: var(--primary-white);
 }
 
 .card{
@@ -58,18 +54,10 @@ i{
 }
 
 p{
-    /*          clamp (alin size, nopeus(?), ylin size) */
-    font-size: 16px;
 
-    font-family: "Inter", serif;
-    font-weight: 400;
-    font-style: normal;
 
     margin-left: 20px;
 
-    color: var(--secondary-grey);
-
-    /* text-shadow: 0px 0px 5px #7a7a7a; */
 }
 
 .up{
