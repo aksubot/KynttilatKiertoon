@@ -108,6 +108,12 @@ iframe{
     }
 }
 
+@media (max-width: 800px){
+    .first{
+        margin-top: 120px;
+    }
+}
+
 
 
 /* #endregion */
@@ -120,6 +126,7 @@ iframe{
     width: 60%;
     margin: auto;
     margin-bottom: 10vh;
+    height: fit-content;
 }
 
 .secondCont{
@@ -196,8 +203,11 @@ iframe{
         height: 90%;
     }
 
-    .second{
-        height: 100vh;
+}
+
+@media (max-width:600px){
+    .first, .second{
+        width: 80%;
     }
 }
 

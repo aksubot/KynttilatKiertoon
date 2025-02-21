@@ -166,9 +166,6 @@
 
 /* #endregion */
 
-h1{
-    margin: 20px 0;
-}
 
 p{
     width: 100%;
@@ -207,5 +204,11 @@ p{
         flex-direction: column;
     }
 
+}
+
+@media (max-width: 600px){
+    .first, .third{
+        width: 80%;
+    }
 }
 
